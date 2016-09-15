@@ -1,15 +1,35 @@
- //declare bacteria variables here   
+Bacteria [] apt;    
  void setup()   
  {     
+ 	apt = new Bacteria[100];
+ 	for (int i=0;i<100;i++){
+ 		apt[i]=new Bacteria(400,200);
+ 	}
  	size(800,400);   
  }   
  
-Bacteria bob = new Bacteria(200,200);
- void draw()   
+/*Bacteria bob = new Bacteria(200,200);
+ Bacteria boob = new Bacteria(100,100);
+Bacteria boobb = new Bacteria(300,150);
+Bacteria boooobby = new Bacteria(400,250);*/
+void draw() 
  {    
  	background(255);
- 	bob.move(); 
- 	bob.show();   
+
+ 	for(int i=0;i<apt.length;i++){
+ 		apt[i].move();
+ 		apt[i].show();
+ 	}
+
+
+ 	/*bob.move(); 
+ 	bob.show();
+ 	boob.move();
+ 	boob.show();
+ 	boobb.move();
+ 	boobb.show();
+ 	boooobby.move();
+ 	boooobby.show();*/   
  }  
  class Bacteria    
  {     
