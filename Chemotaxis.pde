@@ -22,6 +22,8 @@ void draw()
  	}
 
 
+
+
  	/*bob.move(); 
  	bob.show();
  	boob.move();
